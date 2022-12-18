@@ -1,0 +1,542 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Meiryo", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #1d1d1f;
+}
+a {
+  color: #06c;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  max-width: 980px;
+  padding: 0 22px;
+  margin: 0 auto;
+}
+.link-more {
+  font-size: 18px;
+  position: relative;
+  align-items: center;
+}
+.link-more::after {
+  position: absolute;
+  top: 54%;
+  right: -12px;
+  width: 7px;
+  height: 7px;
+  transform: translateY(-50%) rotate(45deg);
+  border-right: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  content: "";
+}
+.link-more:hover {
+  text-decoration: underline;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  width: 100%;
+  background-color: #2c2c2c;
+  position: fixed;
+  z-index: 30;
+}
+#header .header-inner {
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+#header .header-inner .logo {
+  flex-shrink: 0;
+  width: 36px;
+  line-height: 1px;
+  margin-right: 9%;
+}
+#navi {
+  width: 100%;
+}
+#navi ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#navi a {
+  height: 44px;
+  line-height: 44px;
+  display: inline-block;
+  color: #f5f5f7;
+  font-size: 14px;
+  padding: 0 10px;
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+#navi a:hover {
+  opacity: 1;
+}
+.hamburger {
+  display: none;
+}
+/*-------------------------------------------
+メイン
+-------------------------------------------*/
+#main {
+  padding-top: 44px;
+}
+
+/*-------------------------------------------
+Pigol Event 
+-------------------------------------------*/
+#hello {
+  background-image: url(../img/Pigol-Event-1.png);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+  margin-bottom: 45px;
+  position: relative;
+  margin-bottom: 80px;
+}
+#hello .headline {
+  font-size: 56px;
+  color: #f5f5f7;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#hello .subhead {
+  color: #f5f5f7;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#p-event .subtxt {
+  color: #f5f5f7;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#p-event .models {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#p-event .models:hover {
+  text-decoration: underline;
+}
+#p-event .link-a {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#p-event .link-a:hover {
+  text-decoration: underline;
+}
+#p-event .compare-list {
+  display: flex;
+  justify-content: space-between;
+}
+#p-event .item {
+  padding: 20px;
+}
+#p-event .item li {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#p-event .item .item-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+/*-------------------------------------------
+Biomimetics
+-------------------------------------------*/
+#biomimetics {
+  background-image: url(../img/Biomimetics.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+  margin-bottom: 45px;
+  position: relative;
+  margin-bottom: 80px;
+}
+#biomimetics .headline {
+  font-size: 56px;
+  color: #f5f5f7;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#biomimetics .subhead {
+  color: #f5f5f7;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#biomimetics .subtxt {
+  color: #f5f5f7;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#biomimetics .models {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#biomimetics .models:hover {
+  text-decoration: underline;
+}
+#biomimetics .link-a {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#biomimetics .link-a:hover {
+  text-decoration: underline;
+}
+#biomimetics .compare-list {
+  display: flex;
+  justify-content: space-between;
+}
+#biomimetics .item {
+  padding: 20px;
+}
+#biomimetics .item li {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#biomimetics .item .item-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+/*-------------------------------------------
+laptop
+-------------------------------------------*/
+#laptop {
+  margin-bottom: 80px;
+}
+#laptop img {
+  width: 100%;
+  max-width: 1920px;
+  height: 500px;
+  object-fit: cover;
+}
+#laptop .headline {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+/*-------------------------------------------
+ai
+-------------------------------------------*/
+#ai {
+  margin-bottom: 80px;
+}
+#ai img {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+#ai .headline {
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+/*-------------------------------------------
+Compare
+-------------------------------------------*/
+#compare {
+  margin-bottom: 80px;
+}
+#compare .headline {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#compare .models {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#compare .models:hover {
+  text-decoration: underline;
+}
+#compare .compare-list {
+  display: flex;
+  justify-content: space-between;
+}
+#compare .item {
+  padding: 20px;
+}
+#compare .item li {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#compare .item .item-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/*-------------------------------------------
+Collection
+-------------------------------------------*/
+#collection {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 12px;
+}
+#collection .music {
+  background-image: url(../img/a.jpg);
+}
+#collection .watch {
+  background-image: url(../img/Technology.jpg);
+}
+#collection .carbonx {
+  background-image: url(../img/CarbonX.jpg);
+}
+#collection .carbonpro {
+  background-image: url(../img/CarbonPro.jpg);
+}
+#collection .item {
+  background-size: cover;
+  background-position: center;
+  height: 520px;
+  position: relative;
+}
+#collection .item .copy {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#collection .item .bg-dark {
+  color: #fff;
+}
+#collection .item .headline {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+#collection .item .subhead {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+  width: 100%;
+  background-color: #f5f5f7;
+  color: #86868b;
+  font-size: 12px;
+  padding: 20px 0;
+}
+#footer .text-area {
+  border-bottom: 1px solid #d2d2d7;
+}
+#footer .text-area p {
+  margin-bottom: 20px;
+}
+#footer .footer-menu {
+  display: flex;
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+#footer .footer-menu .menu {
+  width: 25%;
+}
+#footer .footer-menu .title {
+  color: #1d1d1f;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#footer .footer-menu li {
+  margin-top: 10px;
+}
+#footer .footer-menu a {
+  color: #86868b;
+}
+#footer .footer-menu a:hover {
+  text-decoration: underline;
+}
+#footer .copyright {
+  font-size: 12px;
+}
+
+/*-------------------------------------------
+レスポンシブ
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header .header-inner .logo {
+    z-index: 20;
+  }
+  #navi {
+    position: fixed;
+    background: #2c2c2c;
+    top: 0;
+    left: 0;
+    height: 50%;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    z-index: 10;
+  }
+  #navi a {
+    font-size: 14px;
+    padding-left: 0;
+  }
+  #navi ul {
+    flex-direction: column;
+    padding: 44px 40px 0 40px;
+    text-align: left;
+  }
+  #navi ul li {
+    width: 100%;
+    border-bottom: solid 1px #f5f5f7;
+  }
+  #navi ul li:last-child {
+    border-bottom: none;
+  }
+  #navi.active {
+    transform: translateY(0%);
+  }
+  /*　ハンバーガーメニュー　*/
+  .hamburger {
+    width: 44px;
+    height: 44px;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 8px;
+    z-index: 20;
+    cursor: pointer;
+  }
+  .hamburger span {
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 14px;
+    transition: 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 18px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 26px;
+  }
+  .hamburger.active span:nth-child(1) {
+    top: 22px;
+    transform: rotate(-45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    top: 22px;
+    transform: rotate(45deg);
+  }
+
+  /*-------------------------------------------
+  Phone
+  -------------------------------------------*/
+  #phone {
+    background-image: url(../img/phone-sp.jpg);
+  }
+  #phone .headline {
+    font-size: 32px;
+  }
+  #phone .subhead {
+    font-size: 19px;
+    top: 88px;
+  }
+
+  /*-------------------------------------------
+  laptop
+  -------------------------------------------*/
+  #laptop .headline {
+    font-size: 32px;
+  }
+
+  /*-------------------------------------------
+  Compare
+  -------------------------------------------*/
+  #compare .headline {
+    font-size: 32px;
+  }
+  #compare .models {
+    font-size: 21px;
+  }
+  #compare .compare-list {
+    flex-wrap: wrap;
+  }
+  #compare .item {
+    width: 50%;
+    padding: 10px;
+  }
+  #compare .item .item-title {
+    font-size: 19px;
+  }
+
+  /*-------------------------------------------
+  Collection
+  -------------------------------------------*/
+  #collection {
+    grid-template-columns: 1fr;
+  }
+  #collection .item .headline {
+    font-size: 32px;
+  }
+  #collection .item .subhead {
+    font-size: 19px;
+  }
+
+  /*-------------------------------------------
+  フッター
+  -------------------------------------------*/
+  #footer .footer-menu {
+    flex-wrap: wrap;
+  }
+  #footer .footer-menu .menu {
+    width: 50%;
+  }
